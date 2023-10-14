@@ -79,7 +79,7 @@ const USMap = ({ cities }) => {
         preventMouseEventsDefault: true,
         fit: false, // Disable automatic fitting
         center: true,
-        zoom: 1, // Adjust the initial zoom level
+        zoom: 2, // Adjust the initial zoom level
         pan: { x: 0, y: 0 }, // Adjust the initial pan position
       });
 
@@ -90,7 +90,17 @@ const USMap = ({ cities }) => {
   return (
     <>
       <center>
-        <div className="mt-8" style={{ width: "100%", height: "600px" }}>
+        <div
+          className="mt-8"
+          style={{
+            width: "100%",
+            height: "600px",
+            position: "fixed",
+            top: "50%",
+            left: "50%",
+            webkitTransform: "translate(-50%, -50%)",
+          }}
+        >
           <svg
             id="bello"
             width="960"
@@ -103,6 +113,7 @@ const USMap = ({ cities }) => {
             </svg>
           </svg>
         </div>
+
         <br />
         <div>{hoverState}</div>
         <div>{hoverCity}</div>

@@ -31,7 +31,6 @@ const HomePage = () => {
     }
 
     // Return null if the city is not found
-
     /* 
     const cityCoordinates = {
       "New York": [-74.0059, 40.7128],
