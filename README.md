@@ -40,5 +40,7 @@ const getCityCoordinates = (cityName) => {
 };
 ```
 
+`usmap.js` is where the actual rendering of SVG occurs. It imports necessary libraries, including React, D3.js, and svg-pan-zoom and initializes state variables for tracking the hovered state and city. Using `useEffect` hook, it loads U.S. state data, and  a map with state outlines, and plots cities as blue circles on the map. Hovering over a state or city updates the hover state/city in the component's state. `svg-pan-zoom` allows for panning and zooming of the map, while still making sure the rendered SVG stays within the boundaries of <div> box. 
+
 
 
