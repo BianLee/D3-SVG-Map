@@ -1,11 +1,9 @@
 # D3.js USA - A Front-end Map Renderer
 
+![D3js](https://github.com/BianLee/d3-svg/assets/62369269/74fbbf5f-e674-4fc4-b6c6-5709403adab1)
+
 ## Overview
 An interactive map that takes user input of US cities, and renders a SVG map using D3.js library and svg-pan-zoom.
-
-[![Video](https://github.com/BianLee/d3-svg/assets/62369269/f4bfa260-0ea6-4141-a7c3-ad8223ac229b)](https://github.com/BianLee/d3-svg/assets/62369269/f4bfa260-0ea6-4141-a7c3-ad8223ac229b)
-
-
 
 ## Flow
 `components/homepage.js` is the parent component, and defines the process of looking up a user input city and adding it to an array if found. The function `handleCityAdded` is passed down to the child component `CityInput`, for the child component to use it by calling `onCityAdded` (reference name of the same function at the child level). The `HomePage` has a second child component `USMap` and passes down cities array as its prop, for the child to use the data to render on screen.
