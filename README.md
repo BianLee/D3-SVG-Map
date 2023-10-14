@@ -3,7 +3,7 @@
 ## Overview
 An interactive map that takes user input of US cities, and renders a SVG map using D3.js library and svg-pan-zoom.
 
-![](https://github.com/BianLee/d3-svg/assets/62369269/f4bfa260-0ea6-4141-a7c3-ad8223ac229b)
+[![Watch the video](https://github.com/BianLee/d3-svg/assets/62369269/f4bfa260-0ea6-4141-a7c3-ad8223ac229b)]
 
 
 ## Flow
