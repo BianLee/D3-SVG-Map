@@ -20,6 +20,18 @@ function test() {
 }
 ```
 
+The city coordinates are stored in the following JSON format:
+```
+ {
+    "city": "San Francisco",
+    "growth_from_2000_to_2013": "7.7%",
+    "latitude": 37.7749295,
+    "longitude": -122.4194155,
+    "population": "837442",
+    "rank": "14",
+    "state": "California"
+  },
+```
 
 The `getCityCoordinates` function takes a city name as input and attempts to find its latitude and longitude in the citiesData dataset, which is in JSON format. If found, it sets latitude and longitude based on the city's data. It also sets a flag, indicating a valid city was found `(setNewCityFound(true))`. It returns an array [longitude, latitude]. If the city isn't found, it returns [0, 0] as default coordinates (a condition checked in `handleCityAdded`).
 
