@@ -77,9 +77,12 @@ const USMap = ({ cities }) => {
         dblClickZoomEnabled: true,
         mouseWheelZoomEnabled: true,
         preventMouseEventsDefault: true,
-        fit: true,
+        fit: false, // Disable automatic fitting
         center: true,
+        zoom: 1, // Adjust the initial zoom level
+        pan: { x: 0, y: 0 }, // Adjust the initial pan position
       });
+
       panZoomRef.current.zoom(0.9);
     });
   }, [cities]);
@@ -90,8 +93,8 @@ const USMap = ({ cities }) => {
         <div className="mt-8" style={{ width: "100%", height: "600px" }}>
           <svg
             id="bello"
-            width="80%"
-            height="100%"
+            width="960"
+            height="600"
             style={{ border: "1px solid #ccc" }}
             preserveAspectRatio="none"
           >
